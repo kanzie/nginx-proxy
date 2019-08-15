@@ -1,5 +1,5 @@
-FROM nginx:1.17.2
-LABEL maintainer="Jason Wilder mail@jasonwilder.com"
+FROM arm64v8/nginx 
+LABEL maintainer="Christian Nilsson kanzie@gmail.com"
 
 # Install wget and install/updates certificates
 RUN apt-get update \

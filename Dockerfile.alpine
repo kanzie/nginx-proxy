@@ -1,5 +1,5 @@
-FROM nginx:1.17.2-alpine
-LABEL maintainer="Jason Wilder mail@jasonwilder.com"
+FROM arm64v8/nginx:1.17.3-alpine
+LABEL maintainer="Christian Nilsson kanzie@gmail.com"
 
 # Install wget and install/updates certificates
 RUN apk add --no-cache --virtual .run-deps \
